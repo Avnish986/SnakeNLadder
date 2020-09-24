@@ -7,7 +7,7 @@ public class SnakeNLadder {
 	public static final int snake=2;
 	public static void main(String[] args) {
 		System.out.println("Welcome to game");
-		int position=98;
+		int position=0;
 		while(position <= 100) {
 		int valDice=(int)(Math.floor(Math.random()*10)%6)+1;
 		System.out.println("player rolled no. "+valDice);
