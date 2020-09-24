@@ -17,6 +17,11 @@ public class SnakeNLadder {
 			System.out.println("Player stays at "+position);
 		else if(option == ladder) {
 			position+=valDice;
+			if(position > 100) {
+				position-=valDice;
+				System.out.println("Player rolled more than expected so stays at "+position);
+			}
+			else
 			System.out.println("Player moves ahead at "+position);
 		}
 		else {
