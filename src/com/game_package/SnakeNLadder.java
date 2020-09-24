@@ -7,9 +7,10 @@ public class SnakeNLadder {
 	public static final int snake=2;
 	public static void main(String[] args) {
 		System.out.println("Welcome to game");
-		int position=0;
+		int position=0; int cnt=0;
 		while(position <= 100) {
 		int valDice=(int)(Math.floor(Math.random()*10)%6)+1;
+		cnt++;
 		System.out.println("player rolled no. "+valDice);
 		
 		int option=(int)(Math.floor(Math.random()*10)%3);
@@ -32,6 +33,8 @@ public class SnakeNLadder {
 		}
 		
 	}
+	System.out.println("No of times dice rolled was : "+cnt);
+		
 	}
 
 }
